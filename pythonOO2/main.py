@@ -7,11 +7,8 @@ def inicia_programa():
     filme1 = Filme("vingadores: guerra inifinita", 2018, 160)
     serie1 = Serie("frieds", 1994, 10)
 
-    print(f"Nome do Filme: {filme1.nome} - Data de lançamento: {filme1.lancamento} "
-          f"- Duração: {filme1.duracao} minutos")
-
-    print(f"Nome da Serie: {serie1.nome} - Data de lançamento: {serie1.lancamento} "
-          f"- Duração: {serie1.temporada} temporadas")
+    print(f'Nome do Filme: {filme1.nome} - Data de Lançamento: {filme1.ano} - Duração: {filme1.duracao} min')
+    print(f'Nome do Filme: {serie1.nome} - Data de Lançamento: {serie1.ano} - Duração: {serie1.temporada} temp')
 
 
 if __name__ == "__main__":
