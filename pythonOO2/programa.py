@@ -27,3 +27,6 @@ class Programa:
     @ano.setter
     def ano(self, value):
         self._ano = value
+
+    def __str__(self):
+        return f'Nome do Filme: {self._nome} - Data de Lançamento: {self._ano} - Likes: {self._likes} likes'
