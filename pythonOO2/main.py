@@ -1,15 +1,26 @@
 from filme import Filme
 from serie import Serie
+from playlist import Playlist
 
 
 def inicia_programa():
-    filme1 = Filme("vingadores guerra inifinita", 2018, 160)
-    serie1 = Serie("frieds", 1994, 10)
+    vingadores = Filme("vingadores guerra inifinita", 2018, 160)
+    batman_cdt = Filme("Batman: o Cavaleiro das trevas", 2008, 152)
+    friends = Serie("frieds", 1994, 10)
+    breaking_bad = Serie("breaking bad", 2008, 5)
 
-    # Polimorfismo
-    playlist_de_programa = [filme1, serie1]
-    for programa in playlist_de_programa:
-        print(programa)
+    vingadores.dar_likes(533)
+    batman_cdt.dar_likes(1223)
+    friends.dar_likes(633)
+    breaking_bad.dar_likes(841)
+
+    lista_de_programas = [vingadores, batman_cdt, friends, breaking_bad]
+    playlist_fds = Playlist("Programas", lista_de_programas)
+
+    for programas in playlist_fds.listagem:
+        print(programas)
+
+    print(f'O tamanho da minha Playlist é de: {playlist_fds.tamanho} Programas')
 
 
 if __name__ == "__main__":

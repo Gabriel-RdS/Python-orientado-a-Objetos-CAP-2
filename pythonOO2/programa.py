@@ -9,8 +9,8 @@ class Programa:
     def likes(self):
         return self._likes
 
-    def dar_likes(self):
-        self._likes += 1
+    def dar_likes(self, numero_de_likes=1):
+        self._likes += numero_de_likes
 
     @property
     def nome(self):
