@@ -11,6 +11,7 @@ class Serie(Programa):
     def temporada(self):
         return self._temporada
 
+    # Permite eu iterar meu objeto como uma string
     def __str__(self):
         return f'Nome da série: {self.nome} - Duração: {self._temporada} Temporadas ' \
                f'Quantidade de Likes: {self.likes}'

@@ -10,6 +10,7 @@ class Filme(Programa):
     def duracao(self):
         return self._duracao
 
+    # Permite eu iterar meu objeto como uma string
     def __str__(self):
         return f'Nome da série: {self.nome} - Duração: {self._duracao} min ' \
                f'Quantidade de Likes: {self.likes}'

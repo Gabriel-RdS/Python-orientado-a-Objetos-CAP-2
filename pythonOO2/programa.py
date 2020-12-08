@@ -1,5 +1,7 @@
+from abc import ABCMeta, abstractmethod
 
-class Programa:
+
+class Programa(metaclass=ABCMeta):
     def __init__(self, nome, ano):
         self._nome = nome.title()
         self._ano = ano
@@ -28,5 +30,9 @@ class Programa:
     def ano(self, value):
         self._ano = value
 
+    # Permite eu iterar meu objeto como uma string
+    # Um método abstrato pois, sempre será sobrescrito nas minha subclasses, e não podera ser ->
+    # -> iterado na minha classe mãe
+    @abstractmethod
     def __str__(self):
-        return f'Nome do Filme: {self._nome} - Data de Lançamento: {self._ano} - Likes: {self._likes} likes'
+        pass

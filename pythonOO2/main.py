@@ -17,10 +17,10 @@ def inicia_programa():
     lista_de_programas = [vingadores, batman_cdt, friends, breaking_bad]
     playlist_fds = Playlist("Programas", lista_de_programas)
 
-    for programas in playlist_fds.listagem:
+    for programas in playlist_fds:
         print(programas)
 
-    print(f'O tamanho da minha Playlist é de: {playlist_fds.tamanho} Programas')
+    print(f'O tamanho da minha Playlist é de: {len(playlist_fds)} Programas')
 
 
 if __name__ == "__main__":
